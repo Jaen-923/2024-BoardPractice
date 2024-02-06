@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="kor">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물 작성폼</title>
+    <style>
+        .layout {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .layout input {
+            width: 100%;
+            min-height: 20px;
+        }
+
+        .layout textarea {
+            width: 100%;
+            margin-top: 20px;
+            min-height: 300px;
+        }
+        button {
+            width: 100%;
+            margin-top: 20px;
+            display: inline-block; 
+            background-color: pink;
+            font-size: large;
+            font-weight: 500;
+            color: white;
+            border: none;
+            border-radius: 2px;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="layout">
+        <form action="/board/writepro" method="post">
+           <input name="title" type="text">
+            <textarea name="content"></textarea>
+            <button type="submit">작성</button> 
+        </form>
+        
+    </div>
+    
+ </body>
+ </html>
